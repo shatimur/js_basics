@@ -24,7 +24,7 @@ const products = [{
     },
 ];
 
-let productsWithPhoto = products.filter(product => product.photos); // выбираем товары с фото
+let productsWithPhoto = products.filter(product => product.photos && product.photos.length > 0); // выбираем товары с фото
 console.log(productsWithPhoto);
 
 let productsPriceSorted = products.sort(function(a, b){ return a.price - b.price});
