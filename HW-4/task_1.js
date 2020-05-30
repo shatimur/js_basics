@@ -1,5 +1,6 @@
+'use strict';
 // let number = +prompt('Введите число в промежутке [0,999]');
-let number = 123;
+let number = 1233;
 
 function numSplit(number) {
 
@@ -13,7 +14,8 @@ function numSplit(number) {
             hundreds: hundreds,
         }
     } else {
-        return 'Введенное значение не является числом в промежутке [0,999]';
+        console.log('Введенное значение не является числом в промежутке [0,999]');
+        return {};
     }
 }
 
